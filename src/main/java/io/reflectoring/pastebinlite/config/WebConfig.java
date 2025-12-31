@@ -11,8 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
                 .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://your-frontend.vercel.app"
+                        "https://pastebin-frontend-ruddy.vercel.app/"
                 )
                 .allowedMethods("GET", "POST", "OPTIONS")
                 .allowedHeaders("*")
