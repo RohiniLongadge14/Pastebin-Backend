@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Paste</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #f7f7f7;
+            padding: 20px;
+        }
+        pre {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Shared Paste</h2>
+
+<pre th:text="${content}">
+    Paste content
+</pre>
+
+</body>
+</html>
