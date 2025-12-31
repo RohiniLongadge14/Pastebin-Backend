@@ -11,9 +11,9 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins(
-                        "https://pastebin-frontend-1s1ek4s8d-rohinis-projects-c95122e8.vercel.app/"
+                        "https://pastebin-frontend-1s1ek4s8d-rohinis-projects-c95122e8.vercel.app"
                 )
-                .allowedMethods("GET", "POST", "OPTIONS")
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .maxAge(3600);
     }
