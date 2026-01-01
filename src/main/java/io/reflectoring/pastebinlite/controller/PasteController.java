@@ -14,9 +14,9 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/pastes")
-@CrossOrigin(
+/*@CrossOrigin(
         origins = "https://pastebin-frontend-1s1ek4s8d-rohinis-projects-c95122e8.vercel.app"
-)
+)*/
 public class PasteController {
 
     @Autowired
