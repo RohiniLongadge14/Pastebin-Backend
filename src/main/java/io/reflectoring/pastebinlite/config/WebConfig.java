@@ -14,7 +14,9 @@ public class WebConfig implements WebMvcConfigurer {
                         "https://pastebin-frontend-1s1ek4s8d-rohinis-projects-c95122e8.vercel.app"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
+                .allowedHeaders("content-type")
+                .exposedHeaders("*")
+                .allowCredentials(false)
                 .maxAge(3600);
     }
 }
